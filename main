@@ -1,0 +1,25 @@
+create database airbnb_go;
+go
+
+use airbnb_go;
+go
+
+create table airbnb_listings (
+Id int primary key,
+City varchar(50),
+Country varchar(50),
+No_of_Rooms int,
+Years_Listed int,
+)
+
+select * from airbnb_listings
+
+insert into airbnb_listings (id, city, country, No_of_Rooms, Years_Listed)
+values
+(1, 'Karachi', 'Pakistan', 3, 2025),
+(2, 'Paris', 'France', 5, 2018),
+(3, 'Tokyo', 'Japan', 2, 2017),
+(4, 'New York', 'USA', 2, 2022),
+(5, 'Shanghai', 'China', 4, 2019);
+
+select * from airbnb_listings
